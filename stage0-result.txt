@@ -1,0 +1,101 @@
+**********************
+*TRUTH TABLE ANALYSIS*
+**********************
+
+File:  /Users/boen/Desktop/ST/AI Intern/AI Organization Analysis/technovation/qca-0-calibrate.csv
+Model: avg2 = f(bet2, clo2, deg2, effective2, efficiency2, tolarge2, tofrontier2, touniversity2, asFrontier, datafoundation, computingpower)
+Algorithm: Quine-McCluskey
+
+--- COMPLEX SOLUTION ---
+frequency cutoff: 1
+consistency cutoff: 0.860806
+                                                                                                                 raw       unique              
+                                                                                                               coverage    coverage   consistency 
+                                                                                                              ----------  ----------  ----------  
+bet2*clo2*deg2*effective2*efficiency2*tofrontier2*touniversity2*~asFrontier*datafoundation*computingpower     0.436396    0.436396    0.848797    
+solution coverage: 0.436396
+solution consistency: 0.848797
+
+
+**********************
+*TRUTH TABLE ANALYSIS*
+**********************
+
+File:  /Users/boen/Desktop/ST/AI Intern/AI Organization Analysis/technovation/qca-0-calibrate.csv
+Model: avg2 = f(bet2, clo2, deg2, effective2, efficiency2, tolarge2, tofrontier2, touniversity2, asFrontier, datafoundation, computingpower)
+Algorithm: Quine-McCluskey
+
+--- PARSIMONIOUS SOLUTION ---
+frequency cutoff: 1
+consistency cutoff: 0.860806
+                     raw       unique              
+                   coverage    coverage   consistency 
+                  ----------  ----------  ----------  
+touniversity2     0.736749    0.736749    0.703204    
+solution coverage: 0.736749
+solution consistency: 0.703204
+
+
+**********************
+*TRUTH TABLE ANALYSIS*
+**********************
+
+File:  /Users/boen/Desktop/ST/AI Intern/AI Organization Analysis/technovation/qca-0-calibrate.csv
+Model: avg2 = f(bet2, clo2, deg2, effective2, efficiency2, tolarge2, tofrontier2, touniversity2, asFrontier, datafoundation, computingpower)
+Algorithm: Quine-McCluskey
+
+--- INTERMEDIATE SOLUTION ---
+frequency cutoff: 1
+consistency cutoff: 0.860806
+Assumptions:
+                                                                                                                 raw       unique              
+                                                                                                               coverage    coverage   consistency 
+                                                                                                              ----------  ----------  ----------  
+bet2*clo2*deg2*effective2*efficiency2*tofrontier2*touniversity2*~asFrontier*datafoundation*computingpower     0.436396    0.436396    0.848797    
+solution coverage: 0.436396
+solution consistency: 0.848797
+
+
+Variable                Mean     Std. Dev.   Minimum    Maximum  N Cases Missing
+BetweennessCentrality    0.0937625    0.1411849          0     0.5043       12       0
+ClosenessCentrality    0.4599383    0.1626545          0    0.67311       12       0
+DegreeCentrality    0.1184866    0.1532654          0    0.51437       12       0
+EffectiveSize       399.1824     524.9707          0     1779.9       12       0
+Efficiency         0.7640119     0.289139          0    0.99433       12       0
+AverageCitation     104.0133      138.348          0     440.82       12       0
+ToLarge            0.1461235    0.1474501          0        0.5       12       0
+ToFrontier      0.0003001117  0.000525644          0  0.0014084       12       0
+ToUniversity       0.4724738    0.1850201          0       0.75       12       0
+computingpower     0.6666667    0.4714045          0          1       12       0
+datafoundation     0.6941667    0.4403116          0          1       12       0
+asFrontier         0.4166667    0.4930066          0          1       12       0
+
+
+Analysis of Necessary Conditions
+
+Outcome variable: avg2
+
+Conditions tested:
+                 Consistency    Coverage
+bet2             0.561837       0.547332
+~bet2            0.492933       0.450727
+clo2             0.581272       0.536705
+~clo2            0.480565       0.463373
+deg2             0.579505       0.558773
+~deg2            0.489399       0.451876
+effective2       0.577739       0.557070
+~effective2      0.489399       0.451876
+efficiency2      0.618375       0.537634
+~efficiency2     0.475265       0.489982
+tolarge2         0.517668       0.515845
+~tolarge2        0.699647       0.626582
+tofrontier2      0.791519       0.599732
+~tofrontier2     0.409894       0.512141
+touniversity2    0.736749       0.703204
+~touniversity2   0.416961       0.388797
+computingpower   0.556537       0.393750
+~computingpower  0.443463       0.627500
+datafoundation   0.614841       0.417767
+~datafoundation  0.385159       0.594005
+asFrontier       0.443463       0.502000
+~asFrontier      0.556537       0.450000
